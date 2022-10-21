@@ -1,15 +1,5 @@
 name: sqldef
-on:
-  push:
-    branches:
-      - master
-    tags:
-      - v*
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
